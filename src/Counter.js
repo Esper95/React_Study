@@ -1,13 +1,13 @@
 import React, {Component} from "react";
 
-const Problematic = () => {
+/*const Problematic = () => {
     throw (new Error('버그가 나타났다!'));
     return (
         <div>
 
         </div>
     );
-};
+};*/
 class Counter extends Component{
     state  = {
         number : 0,
@@ -62,7 +62,7 @@ class Counter extends Component{
             <div>
                 <h1>카운터</h1>
                 <div>값 : {this.state.number}</div>
-                {this.state.number ===4 && <Problematic/>}
+                {/*{this.state.number ===4 && <Problematic/>}*/}
                 <button onClick={this.handleIncrease}>+</button>
                 <button onClick={this.handleDecrease}>-</button>
             </div>
